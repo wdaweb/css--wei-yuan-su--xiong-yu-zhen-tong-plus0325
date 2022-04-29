@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-tw">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>homework_bear</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      /* outline: 1px solid red; */
+    }
+
+    .container {
+      width: 100%;
+      /* height: 100vh; */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+    }
+
+
+
+    .header {
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background-color: black;
+      margin: auto;
+      position: relative;
+    }
+
+    .header::before {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: red;
+      left: -5%;
+      top: 30%;
+    }
+
+    .header::after {
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: red;
+      right: -5%;
+      top: 30%;
+    }
+
+
+
+    .eye {
+      width: 220px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .eye:before {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 30px solid white;
+      background-color: black;
+      top: -75%;
+      left: -20%;
+    }
+
+    .eye:after {
+      content: '';
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: 30px solid white;
+      background-color: black;
+      top: -75%;
+      right: -20%;
+    }
+
+
+
+    .ear {
+      width: 50px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: black;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ear:before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 10px solid black;
+      background-color: white;
+      transform: translate(-50%, -50%);
+      top: -550%;
+      right: 170%;
+    }
+
+    .ear:after {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 10px solid black;
+      background-color: white;
+      transform: translate(-50%, -50%);
+      top: -550%;
+      right: -350%;
+    }
+
+
+
+    .mouth {
+      width: 180px;
+      height: 60px;
+      border-radius: 50%;
+      background-color: black;
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .mouth::before {
+      content: '';
+      width: 80px;
+      height: 90px;
+      background-color: white;
+      position: absolute;
+      top: 210%;
+      left: 52%;
+      transform: translate(-50%, -50%);
+      transform: skewX(-43deg);
+    }
+
+    .mouth::after {
+      content: '';
+      width: 80px;
+      height: 90px;
+      background-color: white;
+      position: absolute;
+      top: 210%;
+      right: 52%;
+      transform: translate(-50%, -50%);
+      transform: skewX(43deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header"></div>
+    <div class="eye"></div>
+    <div class="ear"></div>
+    <div class="mouth"></div>
+  </div>
+
+  <script>
+  </script>
+</body>
+
+</html>
